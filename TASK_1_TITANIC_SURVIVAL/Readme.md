@@ -1,12 +1,12 @@
 Titanic Survival Prediction
 
-📌 Project Overview
+# Project Overview
 
 This project focuses on building a Machine Learning classification model to predict whether a passenger survived the sinking of the RMS Titanic in 1912.
 
 Using passenger information such as age, gender, ticket class, fare, and family details, the model identifies patterns that influenced survival outcomes. This is one of the most popular beginner-level data science projects and serves as a strong foundation for understanding classification problems.
 
-🎯 Objective
+# Objective
 
 To develop a predictive model that determines:
 
@@ -16,7 +16,7 @@ To develop a predictive model that determines:
 
 The goal is to apply data preprocessing, feature engineering, and machine learning techniques to achieve high prediction accuracy.
 
-📂 Dataset Description
+# Dataset Description
 
 The dataset contains passenger details such as:
 
@@ -46,7 +46,7 @@ Survival Status (Target Variable)
 
 Dataset Source: Kaggle Titanic Competition Dataset
 
-🛠️ Technologies Used
+# Technologies Used
 
 Python
 
@@ -60,7 +60,7 @@ XGBoost (for improved performance)
 
 Google Colab / Jupyter Notebook
 
-🔎 Project Workflow
+# Project Workflow
 1️⃣ Data Exploration
 
 Analyzed dataset structure and summary statistics
@@ -101,11 +101,11 @@ Confusion Matrix
 
 Precision, Recall, and F1-score
 
-📊 Model Performance
+# Model Performance
 
 The final optimized model achieved approximately 85–90% accuracy, depending on feature engineering and hyperparameter tuning.
 
-📈 Key Insights
+# Key Insights
 
 Female passengers had significantly higher survival rates.
 
@@ -115,7 +115,7 @@ Smaller families had better survival chances.
 
 Higher ticket fares were often associated with survival.
 
-📁 Project Structure
+# Project Structure
 
 Dataset file
 
@@ -123,7 +123,7 @@ Jupyter/Colab notebook
 
 README documentation
 
-🧠 Learning Outcomes
+# Learning Outcomes
 
 Through this project, the following concepts were strengthened:
 
