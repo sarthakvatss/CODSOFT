@@ -1,4 +1,5 @@
 Titanic Survival Prediction
+
 📌 Project Overview
 
 This project focuses on building a Machine Learning classification model to predict whether a passenger survived the sinking of the RMS Titanic in 1912.
