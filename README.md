@@ -1,35 +1,33 @@
-Movie Rating Prediction using Machine Learning
+Credit Card Fraud Detection
 # Project Overview
 
-This project focuses on building a Machine Learning model that predicts the rating of a movie based on various attributes such as genre, director, actors, number of votes, and duration.
+This project focuses on building a Machine Learning model to detect fraudulent credit card transactions. Fraud detection is a critical real-world application of data science, where financial institutions analyze transaction patterns to identify suspicious activity.
 
-By analyzing historical movie data, the model learns patterns and relationships between movie features and their ratings. The trained model can then estimate the rating of new movies before release.
+The model analyzes transaction data and classifies each transaction as fraudulent or genuine using machine learning techniques.
 
-This project demonstrates the complete machine learning workflow including data preprocessing, feature engineering, model training, and evaluation.
+# Objective
 
-# Objectives
+The main objective of this project is to develop a classification model that can accurately identify fraudulent credit card transactions while minimizing false positives.
 
-Analyze movie dataset to understand factors influencing movie ratings
+# Dataset Description
 
-Perform data cleaning and preprocessing
+The dataset contains anonymized credit card transactions made by European cardholders.
 
-Convert categorical variables into numerical format
+Features include:
 
-Train a machine learning regression model
+V1 – V28: Principal components obtained through PCA transformation
 
-Evaluate model performance using appropriate metrics
+Amount: Transaction amount
 
-Predict ratings for new movie samples
+Time: Seconds elapsed between transactions
 
-# Machine Learning Techniques Used
+Class: Target variable
 
-Regression Modeling
+0 → Genuine Transaction
 
-Feature Encoding
+1 → Fraudulent Transaction
 
-Data Cleaning
-
-Model Evaluation
+One of the main challenges in this dataset is class imbalance, where fraudulent transactions represent a very small percentage of total transactions.
 
 # Technologies Used
 
@@ -39,80 +37,61 @@ Pandas
 
 NumPy
 
-Scikit-learn
-
 Matplotlib
 
 Seaborn
 
-Google Colab / Jupyter Notebook
+Scikit-learn
 
-# Dataset
+Imbalanced-learn (SMOTE)
 
-The dataset contains information about movies including:
-
-Feature	Description
-Genre	Movie genre
-Director	Director of the movie
-Actor 1	Main actor
-Actor 2	Supporting actor
-Actor 3	Supporting actor
-Votes	Number of user votes
-Duration	Length of the movie
-Rating	Target variable (IMDb rating)
 # Project Workflow
-1️⃣ Data Collection
+1️⃣ Data Exploration
 
-Load the movie dataset using Pandas.
+Loaded and inspected the dataset
+
+Analyzed class distribution to understand imbalance
 
 2️⃣ Data Preprocessing
 
-Remove missing values
+Normalized the transaction Amount feature
 
-Clean numerical columns
+Removed unnecessary columns
 
-Convert text features into numeric values using Label Encoding
+Prepared features and target variables
 
-3️⃣ Feature Selection
+3️⃣ Handling Class Imbalance
 
-Selected important features influencing movie ratings.
+Since fraud cases are extremely rare, SMOTE (Synthetic Minority Oversampling Technique) was used to balance the dataset by generating synthetic examples of the minority class.
 
 4️⃣ Model Training
 
-Trained a Random Forest Regressor to learn patterns in the data.
+A Random Forest Classifier was trained to classify transactions as fraudulent or legitimate.
 
 5️⃣ Model Evaluation
 
-Evaluated model performance using:
+The model was evaluated using:
 
-Mean Absolute Error (MAE)
+Accuracy
 
-Root Mean Squared Error (RMSE)
+Precision
 
-R² Score
+Recall
 
-6️⃣ Prediction
+F1-score
 
-Used the trained model to predict ratings for new movie samples.
+Confusion Matrix
 
 # Model Performance
-Metric	Value
-MAE	~0.45
-RMSE	~0.70
-R² Score	~0.85
-Model Accuracy	~85%
-# Feature Importance
 
-The model identifies which features have the greatest impact on predicting movie ratings.
+The trained model achieved strong performance in detecting fraudulent transactions.
 
-Key influencing factors include:
+Key evaluation metrics included:
 
-Number of Votes
+Accuracy: ~97–99%
 
-Director
+High Recall for Fraud Detection
 
-Actors
+Improved F1-score after applying SMOTE
 
-Movie Duration
-
-Genre
+These metrics indicate that the model effectively detects fraudulent transactions while maintaining reliable overall performance.
