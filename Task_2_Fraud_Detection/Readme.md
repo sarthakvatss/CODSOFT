@@ -45,7 +45,7 @@ Scikit-learn
 
 Imbalanced-learn (SMOTE)
 
-🔎 Project Workflow
+# Project Workflow
 1️⃣ Data Exploration
 
 Loaded and inspected the dataset
@@ -91,8 +91,6 @@ Key evaluation metrics included:
 Accuracy: ~97–99%
 
 High Recall for Fraud Detection
-
-Improved F1-score after applying SMOTE
 
 These metrics indicate that the model effectively detects fraudulent transactions while maintaining reliable overall performance.
 
